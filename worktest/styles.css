@@ -1,0 +1,330 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+input {outline:none;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+=====================================
+Выше сброс
+=====================================
+*/
+
+/*
+=====================================
+ClearFix
+=====================================
+*/
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
+.group::after {
+    clear: both;
+}
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*
+=====================================
+Ссылки
+=====================================
+*/
+a {
+    color: white;
+}
+footer a:hover {
+    color: darkgray;
+    text-decoration-line: none;
+}
+
+.menu a{
+    text-decoration-line: none;
+    display: block;
+}
+.menu li:hover{
+    background:#eb5017;
+}
+
+/*
+=====================================
+Шапочка
+=====================================
+*/
+header{
+    margin: 35px 1%;
+}
+img{
+    height: 105px;
+    width: auto;
+    float: left;
+}
+.number{
+    font: 400 26px/26px "Segoe UI",sans-serif;
+    padding-top: 28px;
+    float: right;
+    margin-right: 5%;
+    line-height: 33px;
+    color:#eb5017;
+}
+
+/*
+=====================================
+Меню
+=====================================
+*/
+.menu li{
+    background-color: black;
+    padding:24px 0;
+    font: 400 20px/20px arial,sans-serif;
+    flex:1 1 auto;
+    text-align: center;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+}
+.menu{
+    padding-top: 142px;
+}
+.border{
+    border-right: 1px solid #eb5017;
+}
+
+/*
+=====================================
+main
+=====================================
+*/
+body{
+    height: 1500px;
+}
+
+/*
+=====================================
+Labels
+=====================================
+*/
+.Calculator h1{
+    color: #eb5017;
+    font:500 38px/38px Arial, sans-serif;
+    margin-left: 14.5%;
+    margin-top: 30px;
+}
+.Calculator{
+    background-color: #f2f2f2;
+    width: 65%;
+    margin-left: 2.5%;
+    margin-top: 40px;
+    float:left;
+    display: inline-block;
+}
+/*
+.Calculator ul{
+    width: 27%;
+    margin-top: 26px;
+    float:left;
+}
+.Calculator li{
+    padding: 25px 50px 25px 0;
+    font: 400 18px/18px Arial;
+    text-align: right;
+}
+*/
+
+/*
+=====================================
+interactive
+=====================================
+*/
+.interact{
+    margin: 47px 60% 47px 0;
+    text-align: right;
+
+}
+.interact .fin{
+    font:400 18px/18px Arial, sans-serif;
+    text-align: right;
+    margin: 15px 8% 15px 0;
+    padding: 0;
+    display: inline-block;
+}
+.interact .rad {
+    font:400 18px/18px Arial, sans-serif;
+    text-align: right;
+    margin: 10px 4% 10px 0;
+    padding: 0;
+    display: inline-block;
+}
+.interact input, .interact select {
+    border-radius: 0;
+    border: 1px solid #e3e3e3;
+    width: 120px;
+    height: 23px;
+    margin-right: 10px;
+    font: 300 16px/22px arial, sans-serif;
+}
+.interact select{
+    width:126px;
+}
+#data{
+    width:124px;
+}
+#radio_yes, #radio_no{
+    margin: 0;
+    padding: 0;
+    width: 14px;
+    height: 15px;
+}
+
+/*
+=====================================
+Slider
+=====================================
+*/
+#slider, #slider2{
+    margin-left: 1%;
+    text-align: right;
+}
+.ui-slider {
+    width: 19.5%;
+    height: 10px;
+    display: inline-block;
+    position: absolute; z-index: 1;
+    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 1px #666666;
+    background-color: #2b2b2b;
+}
+.ui-slider .ui-slider-handle:hover,
+.ui-slider .ui-slider-handle:focus,
+.ui-slider-handle{
+    transform: scale(0.6);
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    background-color:#dadada;
+    outline: none;
+}
+.ui-slider-range{
+    height: 4px !important;
+    margin: 3px 0 2px 2px;
+    background-color:#84aa31;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.right{
+    margin-left: 63%;
+}
+.sliderlim{
+    width: 19.5%;
+    color: #666666;
+    margin-left: 0.9%;
+    position: absolute; z-index: 1;
+    text-wrap: avoid;
+}
+small{
+    white-space: nowrap;
+}
+
+/*
+=====================================
+Button & Result
+=====================================
+*/
+.results input{
+    width: 150px;
+    background: linear-gradient(#bff535, #7fc700);
+    height: 50px;
+    margin:10px 3% 50px 8%;
+    border-radius: 10px;
+    border: 2px solid #dcff1b;
+    box-shadow: 0 0 2px 2px #c3c4c4;
+    font:700 16px Arial;
+    color: #395306;
+    display: inline-block;
+}
+.results input:active{
+    background: linear-gradient(#97c22b, #5e9400);
+    color: black;
+}
+.results input:hover{
+    transform: scale(0.95);
+    border: 2px solid #5e9400;
+}
+p{
+    font:700 16px Arial;
+    color: #395306;
+    display: inline-block;
+}
+.hidden{
+    visibility: hidden;
+}
+/*
+=====================================
+Подвал
+=====================================
+*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    align-content: end;
+    margin: 0 1%;
+    width: 98%;
+    background-color: #231f20;
+    padding-bottom: 37px;
+    padding-top: 15px;
+    float: left;
+    font: 300 16px/22px arial, sans-serif;
+}
+.foot {
+    text-align: left;
+    margin-left: 5%;
+}
+.foot li {
+    display: inline-block;
+    margin: 0 1.2%;
+    vertical-align: top;
+}
+

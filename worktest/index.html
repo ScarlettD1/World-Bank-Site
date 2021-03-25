@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>World bank</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script src="script.js"></script>
+
+       <!-- <link rel="shortcut icon" href="images/icon.ico"> -->
+    </head>
+
+<header>
+    <a href="index.html">
+        <img  alt="World Bank" src="images/Logo.png">
+    </a>
+    <div class="number">
+        8-800-100-5005<br>+7 (3452) 522-000
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li class="border"><a href=''>Кредитные карты</a></li>
+            <li class="border"><a href='index.html'>Вклады</a></li>
+            <li class="border"><a href=''>Дебетовая карта</a></li>
+            <li class="border"><a href=''>Страхование</a></li>
+            <li class="border"><a href=''>Друзья</a></li>
+            <li><a href=''>Интернет-банк</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+<div class="Calculator">
+    <h1>Калькулятор</h1>
+       <!-- <ul>
+            <li>Дата оформления вклада</li>
+            <li> Сумма вклада</li>
+            <li>Срок вклада</li>
+            <li>Пополнение вклада</li>
+            <li>Сумма пополнения вклада</li>
+        </ul> -->
+    <form method="post" action=''>
+    <div class="interact">
+        <label class="fin" for="date">Дата оформления вклада</label>
+        <input class="dataI" type="text" id="date" name="date" placeholder="дд.мм.гггг" required>
+        <div></div>
+        <br>
+        <!--Сумма вклада-->
+        <label class="fin" for="amount">Сумма вклада</label>
+        <input type="number" id="amount" name="sum" value="10000" max="3000000" min="1000" required>
+        <div id="slider"></div>
+        <label class="sliderlim" for="slider"><small>1 тыс. руб.</small><small class="right"> 3 000 000</small></label>
+        <br>
+        <!--Срок вклада -->
+            <label class="fin" for="selector">Срок вклада</label>
+            <select name="years" id="selector" required>
+                <option value="12" selected>1 год</option>
+                <option value="24">2 года</option>
+                <option value="36">3 года</option>
+                <option value="48">4 года</option>
+                <option value="60">5 лет</option>
+            </select>
+        <div></div>
+        <br>
+        <!--Пополнение-->
+        <label class="fin">Пополнение вклада</label>
+        <input  class="exception" id="radio_no"  type="radio" name="add"  value="0" checked>
+            <label class="rad" for="radio_no">Нет</label>
+        <input  class="exception" id="radio_yes" type="radio" name="add" value="1">
+            <label class="rad" for="radio_yes">Да</label>
+        <div></div>
+        <br>
+        <!--Сумма пополнения-->
+        <label class="fin" for="addition">Сумма пополнения вклада</label>
+        <input type="number" id="addition" name="add_sum" value="10000" max="3000000" min="1000" required>
+        <div id="slider2"></div>
+        <label class="sliderlim" for="slider2"><small>1 тыс. руб.</small><small class="right"> 3 000 000</small></label>
+    </div>
+    <div class="results">
+        <input type="submit" name="submit" value="Рассчитать">
+        <p>Результат:</p>
+    </div>
+        <input name="hidden" class="hidden" id="hidden" value="0" type="number">
+    </form>
+</div>
+</body>
+
+<footer>
+    <nav class='foot'>
+        <ul>
+            <li><a href=''>Кредитные карты</a></li>
+            <li><a href=''>Вклады</a></li>
+            <li><a href=''>Дебетовая карта</a></li>
+            <li><a href=''>Страхование</a></li>
+		    <li><a href=''>Друзья</a></li>
+		    <li><a href=''>Интернет-банк</a></li>
+        </ul>
+    </nav>
+</footer>
+</html>
